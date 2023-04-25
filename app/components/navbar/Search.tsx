@@ -23,7 +23,7 @@ const Search = () => {
       return getByValue(locationValue as string)?.label;
     }
 
-    return "Anywhere";
+    return "Choose Date";
   }, [locationValue, getByValue]);
 
   const durationLabel = useMemo(() => {
@@ -39,7 +39,7 @@ const Search = () => {
       return `${diff} Days`;
     }
 
-    return "Any Week";
+    return "Choose week";
   }, [startDate, endDate]);
 
   const guestLabel = useMemo(() => {
@@ -112,7 +112,7 @@ const Search = () => {
           <div
             className="
               p-2 
-              bg-yellow-500 
+              bg-green-500 
               rounded-full 
               text-white
             "
